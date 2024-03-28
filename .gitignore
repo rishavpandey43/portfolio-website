@@ -5,10 +5,6 @@ node_modules/
 build/
 dist/
 
-# Ignore IDE and editor files
-.vscode/
-.idea/
-*.iml
 
 # Ignore log files
 *.log
