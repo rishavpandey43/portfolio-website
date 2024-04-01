@@ -7,6 +7,117 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <h1 class="text-4xl text-pink-500">Hello World</h1>
+    <main>
+      <div
+        class="rounded-bl-[150px] bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 p-[1px]"
+      >
+        <header class="container my-12 text-white">
+          <nav>
+            <div class="flex items-center justify-between">
+              <a
+                href=""
+                class="text-lg font-bold sm:text-xl lg:text-2xl xl:text-3xl"
+                >Rishav Pandey</a
+              >
+
+              <ul
+                class="hidden items-center gap-4 text-lg md:flex lg:gap-16 lg:text-xl"
+              >
+                <li>
+                  <a class="hover:text-gray-300" href="#about">About</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-300" href="#projects">Projects</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-300" href="#contact">Contact Me</a>
+                </li>
+                <li>
+                  <button
+                    class="rounded-full bg-white px-4 py-2 text-sm font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
+                  >
+                    Download Resume
+                  </button>
+                </li>
+              </ul>
+              <button
+                class="transition-all hover:scale-125 focus:outline-none md:hidden"
+                onclick="toggleMenu()"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <ul
+              id="mobileMenu"
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 md:hidden"
+            >
+              <li>
+                <a
+                  onclick="toggleMenu()"
+                  class="px-4 py-2 hover:text-gray-300"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="toggleMenu()"
+                  class="px-4 py-2 hover:text-gray-300"
+                  href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="toggleMenu()"
+                  class="px-4 py-2 hover:text-gray-300"
+                  href="#contact"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="container my-24 text-center text-white">
+          <h1 class="mb-4 text-2xl md:text-3xl lg:text-5xl">
+            A Seasoned Frontend Engineer
+          </h1>
+          <p
+            class="mx-auto w-2/3 text-base text-gray-100 md:text-lg lg:text-xl"
+          >
+            Welcome to my personal portfolio. I'm a passionate developer with a
+            focus on creating engaging user experiences.
+          </p>
+          <div
+            class="mx-auto my-10 flex max-w-80 flex-wrap justify-around gap-8"
+          >
+            <button
+              class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
+            >
+              Hire Me
+            </button>
+            <button
+              class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
+            >
+              Resume
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
