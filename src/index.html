@@ -560,6 +560,131 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <section class="container py-24">
+        <div class="mb-20 text-center">
+          <h2
+            class="mb-4 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
+          >
+            Contact Me
+          </h2>
+          <p
+            class="mx-auto bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-base text-transparent md:text-xl lg:w-3/4 xl:w-2/4"
+          >
+            Interested in collaborating or have an opportunity to discuss? Fill
+            out the form below to get in touch!
+          </p>
+        </div>
+
+        <form class="mx-auto max-w-lg" onsubmit="sendMessage(event)">
+          <div class="mt-20 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+              <label for="first-name" class="block text-lg font-medium"
+                >First Name</label
+              >
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Enter your first name"
+                required
+                minlength="2"
+                class="mt-2 block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:ring-red-500 sm:text-sm"
+              />
+            </div>
+            <div class="sm:col-span-3">
+              <label for="last-name" class="block text-lg font-medium"
+                >Last name</label
+              >
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Enter your last name"
+                required
+                minlength="2"
+                class="mt-2 block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm"
+              />
+            </div>
+
+            <div class="sm:col-span-4">
+              <label for="email" class="block text-lg font-medium"
+                >Email address</label
+              >
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email address"
+                required
+                class="mt-2 block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm"
+              />
+            </div>
+
+            <div class="sm:col-span-4">
+              <label for="purpose-to-visit" class="block text-lg font-medium"
+                >Purpose to connect</label
+              >
+              <select
+                id="purpose-to-visit"
+                name="purpose-to-visit"
+                required
+                class="mt-2 block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm"
+              >
+                <option value="Hiring Inquiry">Hire Me</option>
+                <option value="Collaboration Inquiry">Collaborate</option>
+                <option value="Coffee Invitation">Buy me a coffee</option>
+              </select>
+            </div>
+
+            <div class="sm:col-span-full">
+              <label for="your-message" class="block text-lg font-medium"
+                >What's on Your Mind?</label
+              >
+              <textarea
+                id="your-message"
+                name="your-message"
+                rows="5"
+                placeholder="Enter your message here in minimum 40 characters."
+                required
+                minlength="40"
+                class="mt-2 block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm"
+              ></textarea>
+            </div>
+
+            <div class="sm:col-span-full">
+              <button
+                type="submit"
+                class="rounded-xl bg-white bg-gradient-to-r from-purple-500 to-pink-600 px-6 py-2 text-base text-white shadow-lg transition duration-500 hover:scale-125 hover:shadow-none sm:text-xl"
+              >
+                Let's connect!
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="rounded-tr-[150px] bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 py-10 text-white"
+      >
+        <div class="container">
+          <div class="w-full p-5">
+            <h3 class="mb-4 text-xl font-semibold md:text-2xl">Follow Me</h3>
+            <div class="space-y-4">
+              <a href="#" class="block hover:text-gray-300">GitHub</a>
+              <a href="#" class="block hover:text-gray-300">LinkedIn</a>
+              <a href="#" class="block hover:text-gray-300">Twitter</a>
+            </div>
+          </div>
+          <div
+            class="border-t border-gray-50 pt-5 text-center text-base md:text-xl"
+          >
+            © 2024 Rishav Pandey. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./script.js"></script>
   </body>
