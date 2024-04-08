@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishav Pandey: Portfolio</title>
     <link rel="stylesheet" href="./output.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -16,7 +22,7 @@
           <nav>
             <div class="flex items-center justify-between">
               <a
-                href=""
+                href="#hero"
                 class="text-lg font-bold sm:text-xl lg:text-2xl xl:text-3xl"
                 >Rishav Pandey</a
               >
@@ -34,11 +40,13 @@
                   <a class="hover:text-gray-300" href="#contact">Contact Me</a>
                 </li>
                 <li>
-                  <button
-                    class="rounded-full bg-white px-4 py-2 text-sm font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
+                  <a
+                    href="./assets/Front-End-Developer-Resume.pdf"
+                    target="_blank"
+                    download=""
+                    class="rounded-full bg-white px-4 py-2 text-sm text-pink-500 shadow-lg shadow-pink-800 transition duration-500 hover:scale-125 hover:shadow-none lg:text-base"
+                    >Download Resume</a
                   >
-                    Download Resume
-                  </button>
                 </li>
               </ul>
               <button
@@ -93,7 +101,7 @@
           </nav>
         </header>
         <!-- Hero Section -->
-        <section class="container my-24 text-center text-white">
+        <section id="hero" class="container my-24 text-center text-white">
           <h1 class="mb-4 text-2xl md:text-3xl lg:text-5xl">
             A Seasoned Frontend Engineer
           </h1>
@@ -106,16 +114,19 @@
           <div
             class="mx-auto my-10 flex max-w-80 flex-wrap justify-around gap-8"
           >
-            <button
+            <a
+              href="#contact"
               class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
             >
               Hire Me
-            </button>
-            <button
+            </a>
+            <a
+              href="./assets/Front-End-Developer-Resume.pdf"
+              target="_blank"
               class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 transition-all duration-300 ease-in-out hover:scale-125"
             >
               Resume
-            </button>
+            </a>
           </div>
         </section>
       </div>
@@ -274,6 +285,7 @@
 
       <!-- About Section -->
       <section
+        id="about"
         class="rounded-bl-[150px] rounded-tr-[150px] bg-gradient-to-r from-purple-500 to-pink-600 py-24 text-white"
       >
         <div class="container text-center">
@@ -307,7 +319,7 @@
       </section>
 
       <!-- Projects Section -->
-      <section class="container py-24">
+      <section id="projects" class="container py-24">
         <div class="mb-20 text-center">
           <h2
             class="mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
@@ -562,7 +574,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="container py-24">
+      <section id="contact" class="container py-24">
         <div class="mb-20 text-center">
           <h2
             class="mb-4 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
